@@ -1,0 +1,41 @@
+﻿@model
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="m-immersive-hero">
+    <div class="c-carousel f-multi-slide" role="region" aria-label="Label">
+        <div class="c-sequence-indicator" role="tablist">
+        </div>
+        <button class="c-flipper f-previous f-large" aria-hidden="true" tabindex="-1"></button>
+        <button class="c-flipper f-next f-large" aria-hidden="true" tabindex="-1"></button>
+        <div itemscope itemtype="http://schema.org/ItemList">
+            <ul>
+                <li id="default-align-top" data-f-theme="dark" class="f-active">
+                    <section class="m-immersive-hero-item theme-dark f-align-top" style="background:#1f1726">
+                        <picture class="c-image">
+                            <source srcset="~/images/home.jpg" media="(min-width: 1779px)">
+                            <source srcset="~/images/home.jpg" media="(min-width:1400px)">
+                            <source srcset="~/images/home.jpg" media="(min-width:1084px)">
+                            <source srcset="~/images/home.jpg" media="(min-width:768px)">
+                            <source srcset="~/images/home.jpg" media="(min-width:540px)">
+                            <source srcset="~/images/home.jpg" media="(min-width:0)">
+                            <img srcset="~/images/home.jpg" src="~/images/home.jpg" alt="Placeholder with grey background and dimension watermark without any imagery">
+                        </picture>
+                        <div>
+                            <div>
+                                <p class="c-subheading">Trending Rants</p>
+                                @for(int i=0;i<3;i++)
+                                {
+                                    <p></p>
+                                }
+                                <a href="#" class="c-call-to-action c-glyph" aria-label="More verbose call to action text">
+                                    <span>Explore</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
